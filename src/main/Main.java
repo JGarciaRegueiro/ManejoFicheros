@@ -31,13 +31,14 @@ public class Main {
 	            scanner.next();
 			}
 			opcion = scanner.nextInt();
+			scanner.nextLine();
 			
 			switch (opcion) {
 				case 1:
 					System.out.println("Introduce el nombre del articulo");
-					String nombre = scanner.next();
+					String nombre = scanner.nextLine();
 					System.out.println("Introduce la descripcion del articulo");
-					String descripcion = scanner.next();
+					String descripcion = scanner.nextLine();
 					System.out.println("Introduce el stock del articulo");
 					enteroValido(scanner);
 					int stock = scanner.nextInt();
